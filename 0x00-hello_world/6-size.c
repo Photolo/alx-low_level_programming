@@ -1,19 +1,17 @@
 #include <stdio.h>
 /**
-* main - print if the number is postive, zero, or negative
-*
-* Description: using the main function
-* this program prints "Programming is positive, zero, or negative
-* Return: 0
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
+{
+	printf("Size of a char: %lu byte(s)\n", sizeof(char));
+	printf("Size of an int: %lu byte(s)\n", sizeof(int));
+	printf("Size of a long int: %lu byte(s)\n", sizeof(long int));
+	printf("Size of a long long int: %lu byte(s)\n", sizeof(long long int));
+	printf("Size of a long long int: %lu byte(s)\n", sizeof(long long int));
 
-{
-int n;
-for (n = '0'; n <= '9'; n++)
-{
-putchar(n);
-}
-putchar('\n');
-return (0);
+	return (0);
+
 }
