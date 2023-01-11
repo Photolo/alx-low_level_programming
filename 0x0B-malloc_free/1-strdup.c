@@ -1,48 +1,28 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 /**
  * _strlen - count array
  * @s: array of elements
- * Return: 1
- */
-
-int _strlen(char *s)
-{
-	unsigned int i;
-
-	i = 0;
-	while (s[i] != '\0') /*count character of string*/
-	{
-		i++;
-	}
-
-	return (i);
-}
-
-/**
- * _strdup - array for prints a string
- * @str: array of elements
- * Return: pointer
+ * Return: 0
  */
 
 char *_strdup(char *str)
 {
-	char *dst;
-	unsigned int size;
+	 if (str == NULL)
+	 {
+		 return (NULL);
+	 }
 
-	if (str == 0)
-	{
-		return (NULL);
-	}
+	 size_t len = strlen(str);
+	 char *result = malloc(len + 1);
+	  if (result == NULL)
+	  {
+		  return (NULL);
+	  }
 
-	size = _strlen(str) + 1;
-
-	dst = (char *) malloc(size * sizeof(char));
-
-	if (dst == 0)
-	{
-		return (NULL);
-	}
-
-	_strcpy(dst, str);
-	return (dst);
+	  strcpy(result, str);
+	    return (result);
 }
+
