@@ -20,7 +20,7 @@ char *_strdup(char *str)
 	}
 	 
 	i = 0;
-       
+
 	while (str[i] != '\0')
 	       
 		i++;
@@ -32,8 +32,6 @@ char *_strdup(char *str)
 	 }
 
 	 for (r = 0; str[r]; r++)
-		 
 		 aaa[r] = str[r];
-
 	 return (aaa);
 }
