@@ -4,8 +4,8 @@
  * op_add - funtion to add
  * @a: input 1
  * @b: input 2
- * Return: sum a and b
- */*
+ * Return: sum and b
+ */
 
 int op_add(int a, int b)
 {
